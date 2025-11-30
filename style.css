@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(to bottom right, #ffb3d9, #ffd9f2, #ff99cc);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.nameBox {
+    padding: 12px;
+    font-size: 16px;
+    width: 80%;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    text-align: center;
+}
+
+
+.container {
+    background: #fff7fb;
+    width: 90%;
+    max-width: 480px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 3px solid #ffccf2;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #d63384;
+    font-weight: bold;
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e05699;
+}
+
+.hidden {
+    display: none;
+    animation: fadeIn 1s;
+    margin-top: 18px;
+    color: #993366;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.yes, .no {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.yes {
+    background: gold;
+    color: #b3005e;
+}
+
+.no {
+    background: #ff4d6d;
+    color: white;
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: pink;
+    clip-path: polygon(50% 0%, 61% 10%, 75% 10%, 85% 20%, 85% 35%, 50% 75%, 15% 35%, 15% 20%, 25% 10%, 39% 10%);
+    animation: floatUp 2s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-200px) scale(1.7); opacity: 0; }
+}
+
+.gold {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.photos img {
+    width: 30%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
